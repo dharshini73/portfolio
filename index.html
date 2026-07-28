@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>S. Mahadharshini | Full-Stack Developer Portfolio</title>
+  <meta name="description"
+    content="Portfolio of S. Mahadharshini, a passionate Full-Stack Developer specializing in HTML, CSS, JavaScript, Node.js, Django, MongoDB, MySQL, and AWS cloud solutions.">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Scroll Progress Indicator -->
+  <div class="scroll-progress-bar" id="scrollProgress"></div>
+
+  <!-- Header & Sticky Navigation -->
+  <header id="header">
+    <div class="container navbar">
+      <a href="#" class="logo">MAHA<span>DHARSHINI</span></a>
+
+      <nav>
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="#" class="nav-link">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#experience" class="nav-link">Experience</a></li>
+          <li><a href="#certifications" class="nav-link">Certifications</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#education" class="nav-link">Education</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <!-- Theme Toggle -->
+        <button class="theme-toggle-btn" id="themeToggle" aria-label="Toggle Theme">
+          <svg class="moon" viewBox="0 0 24 24">
+            <path
+              d="M12.3 22h-.1c-5.5 0-10-4.5-10-10 0-4.8 3.5-8.9 8.2-9.8.5-.1 1 .2 1.2.7.2.5 0 1.1-.4 1.4-2.8 2-3.7 5.9-1.9 9 2 3.1 5.9 4 9 2.2.4-.3.9-.3 1.3 0 .4.3.6.8.5 1.3C19 20 15.8 22 12.3 22z" />
+          </svg>
+          <svg class="sun" viewBox="0 0 24 24">
+            <path
+              d="M12 7c-2.76 0-5 2.24-5 5s2.24 5 5 5 5-2.24 5-5-2.24-5-5-5zM2 13h2c.55 0 1-.45 1-1s-.45-1-1-1H2c-.55 0-1 .45-1 1s.45 1 1 1zm18 0h2c.55 0 1-.45 1-1s-.45-1-1-1h-2c-.55 0-1 .45-1 1s.45 1 1 1zM11 2v2c0 .55.45 1 1 1s1-.45 1-1V2c0-.55-.45-1-1-1s-1 .45-1 1zm0 18v2c0 .55.45 1 1 1s1-.45 1-1v-2c0-.55-.45-1-1-1s-1 .45-1 1zM5.99 4.58c-.39-.39-1.03-.39-1.41 0s-.39 1.03 0 1.41l1.06 1.06c.39.39 1.03.39 1.41 0s.39-1.03 0-1.41L5.99 4.58zm12.37 12.37c-.39-.39-1.03-.39-1.41 0s-.39 1.03 0 1.41l1.06 1.06c.39.39 1.03.39 1.41 0s.39-1.03 0-1.41l-1.06-1.06zm1.06-10.96c.39-.39.39-1.03 0-1.41s-1.03-.39-1.41 0l-1.06 1.06c-.39.39-.39 1.03 0 1.41s1.03.39 1.41 0l1.06-1.06zM7.05 18.01c.39-.39.39-1.03 0-1.41s-1.03-.39-1.41 0l-1.06 1.06c-.39.39-.39 1.03 0 1.41s1.03.39 1.41 0l1.06-1.06z" />
+          </svg>
+        </button>
+
+        <!-- Mobile Menu Toggle -->
+        <button class="hamburger" id="hamburger" aria-label="Toggle Mobile Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <span class="hero-greeting">Hello I'm</span>
+        <h1 class="hero-title">S. Mahadharshini</h1>
+        <h2 class="hero-subtitle">Full-Stack Developer</h2>
+        <p class="hero-desc">
+          I design and build responsive, user-friendly web applications from front to back.
+          With solid knowledge of frontend interfaces, scalable backend systems, and cloud configurations,
+          I engineer robust solutions tailored to deliver outstanding digital experiences.
+        </p>
+        <div class="hero-ctas">
+          <a href="#projects" class="btn btn-primary">
+            View Projects
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <line x1="5" y1="12" x2="19" y2="12" />
+              <polyline points="12 5 19 12 12 19" />
+            </svg>
+          </a>
+          <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+          <a href="assets/S_Mahadharshini_Resume.pdf" class="btn btn-secondary" download="S_Mahadharshini_Resume.pdf"
+            style="border-color: var(--accent-secondary);">
+            Download Resume
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-dasharray="none"
+              stroke-width="2.5">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3" />
+            </svg>
+          </a>
+        </div>
+      </div>
+      <div class="hero-image-container">
+        <div class="profile-frame">
+          <img src="profile.jpg" alt="S. Mahadharshini" class="profile-photo">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About / Professional Summary Section -->
+  <section class="section reveal" id="about">
+    <div class="container">
+      <h2 class="section-title">About Me</h2>
+      <div class="glass-card" style="max-width: 900px; margin: 0 auto;">
+        <p style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 20px;">
+          I am a dedicated <strong>Full-Stack Developer</strong> passionate about building high-performance, accessible,
+          and elegant web solutions. Over the course of my academic career and industry internship, I have developed a
+          strong foundation in modern web design principles and end-to-end web engineering.
+        </p>
+        <p style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 20px;">
+          Whether crafting smooth user interfaces using <strong>HTML, CSS, and JavaScript</strong> or programming
+          flexible backend business logic with <strong>Node.js and Express</strong>, I focus on clean structure and
+          clean database queries using <strong>MongoDB and MySQL</strong>.
+        </p>
+        <p style="font-size: 1.1rem; line-height: 1.8;">
+          Currently, I am expanding my skills in **Cloud Infrastructure and DevOps**, deploying web services using
+          **AWS** compute (EC2), identity management (IAM), storage (S3), and custom networks. I enjoy solving
+          challenging software problems and am eager to contribute to dynamic software development teams.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Technical Skills Section -->
+  <section class="section reveal" id="skills">
+    <div class="container">
+      <h2 class="section-title">Technical Skills</h2>
+
+      <div class="skills-filter">
+        <button class="filter-btn active" data-filter="all">All Skills</button>
+        <button class="filter-btn" data-filter="frontend">Frontend</button>
+        <button class="filter-btn" data-filter="backend">Backend</button>
+        <button class="filter-btn" data-filter="cloud-tools">DevOps & Tools</button>
+      </div>
+
+      <div class="skills-grid">
+        <!-- Frontend Skills Card -->
+        <div class="glass-card skill-category-card" data-category="frontend">
+          <h3 class="skill-category-title">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="2" y="3" width="20" height="14" rx="2" ry="2" />
+              <line x1="8" y1="21" x2="16" y2="21" />
+              <line x1="12" y1="17" x2="12" y2="21" />
+            </svg>
+            Frontend Development
+          </h3>
+          <div class="skill-items-list">
+            <div class="skill-item">
+              <div class="skill-info"><span>HTML5 / CSS3</span><span>90%</span></div>
+              <div class="skill-bar-bg">
+                <div class="skill-bar-fill" data-width="90%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info"><span>JavaScript (ES6+)</span><span>85%</span></div>
+              <div class="skill-bar-bg">
+                <div class="skill-bar-fill" data-width="85%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info"><span>Web Design / UI/UX</span><span>80%</span></div>
+              <div class="skill-bar-bg">
+                <div class="skill-bar-fill" data-width="80%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Backend Skills Card -->
+        <div class="glass-card skill-category-card" data-category="backend">
+          <h3 class="skill-category-title">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <ellipse cx="12" cy="5" rx="9" ry="3" />
+              <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5" />
+              <path d="M3 12c0 1.66 4 3 9 3s9-1.34 9-3" />
+            </svg>
+            Backend & Database
+          </h3>
+          <div class="skill-items-list">
+            <div class="skill-item">
+              <div class="skill-info"><span>Node.js / Express.js</span><span>80%</span></div>
+              <div class="skill-bar-bg">
+                <div class="skill-bar-fill" data-width="80%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info"><span>MongoDB</span><span>80%</span></div>
+              <div class="skill-bar-bg">
+                <div class="skill-bar-fill" data-width="80%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info"><span>Python / Django</span><span>75%</span></div>
+              <div class="skill-bar-bg">
+                <div class="skill-bar-fill" data-width="75%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info"><span>MySQL</span><span>80%</span></div>
+              <div class="skill-bar-bg">
+                <div class="skill-bar-fill" data-width="80%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Cloud & DevOps Card -->
+        <div class="glass-card skill-category-card" data-category="cloud-tools">
+          <h3 class="skill-category-title">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z" />
+            </svg>
+            DevOps & Tools
+          </h3>
+          <div class="skill-items-list">
+            <div class="skill-item">
+              <div class="skill-info"><span>AWS Cloud Services</span><span>70%</span></div>
+              <div class="skill-bar-bg">
+                <div class="skill-bar-fill" data-width="70%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info"><span>Git / GitHub</span><span>85%</span></div>
+              <div class="skill-bar-bg">
+                <div class="skill-bar-fill" data-width="85%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info"><span>Linux / Bash</span><span>75%</span></div>
+              <div class="skill-bar-bg">
+                <div class="skill-bar-fill" data-width="75%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info"><span>VS Code</span><span>90%</span></div>
+              <div class="skill-bar-bg">
+                <div class="skill-bar-fill" data-width="90%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Work Experience Section -->
+  <section class="section reveal" id="experience">
+    <div class="container">
+      <h2 class="section-title">Work Experience</h2>
+      <div class="experience-container">
+        <div class="timeline">
+          <!-- Internship Item -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-header">
+              <div>
+                <h3 class="job-title">Full Stack Developer Intern</h3>
+                <div class="job-meta">
+                  <span>Vinsup Infotech Private Limited</span>
+                  <span>•</span>
+                  <span>Madurai, TN</span>
+                </div>
+              </div>
+              <span class="job-date">May 2025 – Jun 2025</span>
+            </div>
+            <div class="glass-card">
+              <ul class="job-bullets">
+                <li>Completed rigorous hands-on training in Full Stack Web Development using HTML, CSS, JavaScript,
+                  Node.js, and MongoDB, alongside training in Python, Django, and MySQL.</li>
+                <li>Developed interactive, responsive, and cross-browser compatible user interfaces utilizing HTML5,
+                  CSS3, and JavaScript best practices.</li>
+                <li>Acquired operational backend engineering experience implementing servers using Node.js/Express.js
+                  and managing data schemas with MongoDB.</li>
+                <li>Built lightweight backend models and APIs, developing fundamental skills in MVC architectures and
+                  application workflow design.</li>
+                <li>Leveraged Git and GitHub workflows for secure version control, branch isolation, and structured pull
+                  requests.</li>
+                <li>Participated in quality assurance workflows, writing manual test scripts to debug issues, optimize
+                  speed, and improve responsive layout displays.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Certifications & Detailed Internship Briefing -->
+  <section class="section reveal" id="certifications">
+    <div class="container">
+      <h2 class="section-title">Certifications & Training</h2>
+
+      <div class="certificate-section-layout">
+        <!-- Interactive Certificate Image -->
+        <div class="certificate-mockup-wrapper" id="certMockup">
+          <img src="vinsup_certificate.jpg" alt="Vinsup Infotech Internship Certificate" class="cert-image">
+        </div>
+
+        <!-- Certificate Brief Explanation -->
+        <div class="cert-brief-card">
+          <span class="cert-badge">Verified Credential</span>
+          <h3 class="cert-title">Full-Stack Internship Certification</h3>
+          <p class="cert-description">
+            Issued on <strong>June 10, 2025</strong> by <strong>Vinsup Infotech (P) Ltd</strong>, this certificate
+            validates
+            my month-long full-time internship program as a Full Stack Intern.
+            The internship program bridged the gap between academic theory and commercial software engineering,
+            empowering me to write production-grade code.
+          </p>
+          <p class="cert-description" style="margin-top: -5px;">
+            The certificate certifies that my performance met the company's <strong>"entire satisfaction"</strong>,
+            verifying my competency in building clean front-ends and designing databases.
+          </p>
+
+          <div class="cert-features-grid">
+            <div class="cert-feature-item">
+              <span class="cert-feature-icon">
+                <svg viewBox="0 0 24 24">
+                  <path
+                    d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z" />
+                </svg>
+              </span>
+              <div class="cert-feature-text">
+                <h4>Duration & Location</h4>
+                <p>May 05, 2025 to Jun 05, 2025 • Madurai, TN</p>
+              </div>
+            </div>
+
+            <div class="cert-feature-item">
+              <span class="cert-feature-icon">
+                <svg viewBox="0 0 24 24">
+                  <path
+                    d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
+                </svg>
+              </span>
+              <div class="cert-feature-text">
+                <h4>Core Technologies Verified</h4>
+                <p>HTML, CSS, JS, Python, Django, MySQL</p>
+              </div>
+            </div>
+
+            <div class="cert-feature-item">
+              <span class="cert-feature-icon">
+                <svg viewBox="0 0 24 24">
+                  <path
+                    d="M19.14 12.94c.04-.3.06-.61.06-.94 0-.32-.02-.64-.07-.94l2.03-1.58c.18-.14.23-.41.12-.61l-1.92-3.32c-.12-.22-.37-.29-.59-.22l-2.39.96c-.5-.38-1.03-.7-1.62-.94l-.36-2.54c-.04-.24-.24-.41-.48-.41h-3.84c-.24 0-.43.17-.47.41l-.36 2.54c-.59.24-1.13.57-1.62.94l-2.39-.96c-.22-.08-.47 0-.59.22L2.74 8.87c-.12.21-.08.47.12.61l2.03 1.58c-.05.3-.09.63-.09.94s.02.64.07.94l-2.03 1.58c-.18.14-.23.41-.12.61l1.92 3.32c.12.22.37.29.59.22l2.39-.96c.5.38 1.03.7 1.62.94l.36 2.54c.05.24.24.41.48.41h3.84c.24 0 .44-.17.47-.41l.36-2.54c.59-.24 1.13-.56 1.62-.94l2.39.96c.22.08.47 0 .59-.22l1.92-3.32c.12-.22.07-.47-.12-.61l-2.01-1.58zM12 15.6c-1.98 0-3.6-1.62-3.6-3.6s1.62-3.6 3.6-3.6 3.6 1.62 3.6 3.6-1.62 3.6-3.6 3.6z" />
+                </svg>
+              </span>
+              <div class="cert-feature-text">
+                <h4>Engineered Architecture</h4>
+                <p>Relational schemas, MTV pattern, server templates</p>
+              </div>
+            </div>
+
+            <div class="cert-feature-item">
+              <span class="cert-feature-icon">
+                <svg viewBox="0 0 24 24">
+                  <path
+                    d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 15l-4-4 1.41-1.41L10 13.17l7.59-7.59L19 7l-9 9z" />
+                </svg>
+              </span>
+              <div class="cert-feature-text">
+                <h4>Quality Checked</h4>
+                <p>Clean markup, server response tests, safe db operations</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        style="margin-top: 40px; display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 25px;">
+        <!-- Other certs / trainings -->
+        <div class="glass-card">
+          <span class="cert-badge"
+            style="background: rgba(79, 172, 254, 0.15); color: var(--accent-secondary); border-color: rgba(79, 172, 254, 0.2);">Infrastructure
+            Training</span>
+          <h3 style="margin: 15px 0 10px 0; font-family: var(--font-heading);">Cloud Computing / AWS Training</h3>
+          <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.6;">
+            Actively pursuing structured cloud systems training. Gaining expertise in managing compute nodes, storage
+            buckets, and secure networks on AWS.
+          </p>
+          <ul class="job-bullets" style="margin-top: 15px;">
+            <li>Hands-on experience configuring AWS EC2 servers, S3 static assets, and IAM profiles.</li>
+            <li>Practicing network setup, route configuration, and cloud-native hosting architectures.</li>
+            <li>Gaining server administration experience in command line Linux and scripting automation.</li>
+          </ul>
+        </div>
+
+        <div class="glass-card">
+          <span class="cert-badge"
+            style="background: rgba(79, 172, 254, 0.15); color: var(--accent-secondary); border-color: rgba(79, 172, 254, 0.2);">Co-Curricular
+            / Leadership</span>
+          <h3 style="margin: 15px 0 10px 0; font-family: var(--font-heading);">NSS Activities & Participation</h3>
+          <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.6;">
+            Served as an active National Service Scheme (NSS) volunteer, engaging in social welfare and campus
+            leadership initiatives.
+          </p>
+          <ul class="job-bullets" style="margin-top: 15px;">
+            <li>Organized and contributed to community developmental and environmental service camps.</li>
+            <li>Collaborated in teams to coordinate awareness drives, developing public speaking skills.</li>
+            <li>Honed crucial interpersonal skills: leadership, public relations, and empathy.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lightbox Modal for Certificate Preview -->
+  <div class="modal" id="certModal">
+    <div class="modal-content-wrapper">
+      <button class="modal-close-btn" id="modalClose">&times;</button>
+      <img src="assets/vinsup_certificate.jpg" alt="High Resolution Certificate" class="modal-image">
+    </div>
+  </div>
+
+  <!-- Projects & Research Section -->
+  <section class="section reveal" id="projects">
+    <div class="container">
+      <h2 class="section-title">Projects</h2>
+
+      <div class="projects-grid">
+        <div class="glass-card project-card">
+          <div class="project-header-row">
+            <span class="project-folder-icon">
+              <svg viewBox="0 0 24 24">
+                <path d="M10 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2h-8l-2-2z" />
+              </svg>
+            </span>
+            <div class="project-links">
+              <!-- Insert project links (e.g. GitHub) if available -->
+              <a href="https://github.com/dharshini73" target="_blank" aria-label="GitHub Repository">
+                <svg viewBox="0 0 24 24">
+                  <path
+                    d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.17 6.839 9.49.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.464-1.11-1.464-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.831.092-.646.35-1.086.636-1.336-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.137 20.167 22 16.418 22 12c0-5.523-4.523-10-10-10z" />
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <h3 class="project-title">Staff Attendance & Leave Management System</h3>
+          <p class="project-desc">
+            A comprehensive, web-based business automation application built to digitize and manage organizational staff
+            attendance records and leave requests.
+            It features structured role-based access control, allowing employees to log attendance and request leaves,
+            while administrators can review schedules and approve/deny requests.
+          </p>
+
+          <ul class="project-tech-list">
+            <li class="project-tech-tag">HTML5</li>
+            <li class="project-tech-tag">CSS3</li>
+            <li class="project-tech-tag">JavaScript</li>
+            <li class="project-tech-tag">Node.js</li>
+            <li class="project-tech-tag">Express.js</li>
+            <li class="project-tech-tag">MongoDB</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education Section -->
+  <section class="section reveal" id="education">
+    <div class="container">
+      <h2 class="section-title">Education</h2>
+
+      <div class="education-grid">
+        <!-- BCA -->
+        <div class="glass-card edu-card">
+          <div>
+            <span class="edu-year">2023 – 2026</span>
+            <h3 class="edu-degree">Bachelor of Computer Applications (BCA)</h3>
+            <p class="edu-school">Jayaraj Annapackiyam College for Women (Autonomous)</p>
+            <p style="color: var(--text-muted); font-size: 0.9rem; margin-top: -10px;">Periyakulam, Tamil Nadu</p>
+          </div>
+          <div class="edu-score" style="margin-top: 20px;">CGPA: 7.1</div>
+        </div>
+
+        <!-- HSC -->
+        <div class="glass-card edu-card">
+          <div>
+            <span class="edu-year">Graduated 2023</span>
+            <h3 class="edu-degree">Higher Secondary Certificate (HSC)</h3>
+            <p class="edu-school">St. Anne's Hr. Sec. School</p>
+          </div>
+          <div class="edu-score" style="margin-top: 20px;">Score: 83.4%</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="section reveal" id="contact">
+    <div class="container">
+      <h2 class="section-title">Contact Me</h2>
+
+      <div class="contact-grid">
+        <!-- Info Column -->
+        <div class="contact-info-panel">
+          <div>
+            <h3 class="contact-heading">Get in Touch</h3>
+            <p class="contact-sub">I'm currently looking for full-time opportunities as a Full-Stack Developer! If you
+              have any questions or want to work together, feel free to reach out.</p>
+          </div>
+
+          <div class="contact-method-list">
+            <!-- Email -->
+            <div class="contact-method-item">
+              <span class="contact-method-icon">
+                <svg viewBox="0 0 24 24">
+                  <path
+                    d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
+                </svg>
+              </span>
+              <div class="contact-method-detail">
+                <h4>Email</h4>
+                <p><a href="mailto:dharshinimd1303@gmail.com">dharshinimd1303@gmail.com</a></p>
+              </div>
+            </div>
+
+            <!-- Phone -->
+            <div class="contact-method-item">
+              <span class="contact-method-icon">
+                <svg viewBox="0 0 24 24">
+                  <path
+                    d="M6.62 10.79a15.15 15.15 0 0 0 6.5 6.5l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z" />
+                </svg>
+              </span>
+              <div class="contact-method-detail">
+                <h4>Phone</h4>
+                <p><a href="tel:9342760030">9342760030</a></p>
+              </div>
+            </div>
+
+            <!-- Location -->
+            <div class="contact-method-item">
+              <span class="contact-method-icon">
+                <svg viewBox="0 0 24 24">
+                  <path
+                    d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
+                </svg>
+              </span>
+              <div class="contact-method-detail">
+                <h4>Location</h4>
+                <p>Theni, Tamil Nadu, India</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Socials -->
+          <div class="contact-social-icons">
+            <a href="https://linkedin.com/in/maha-dharshini" target="_blank" class="social-circle-link"
+              aria-label="LinkedIn Profile">
+              <svg viewBox="0 0 24 24">
+                <path
+                  d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.779-1.75-1.75s.784-1.75 1.75-1.75 1.75.779 1.75 1.75-.784 1.75-1.75 1.75zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+              </svg>
+            </a>
+            <a href="https://github.com/dharshini73" target="_blank" class="social-circle-link"
+              aria-label="GitHub Profile">
+              <svg viewBox="0 0 24 24">
+                <path
+                  d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.17 6.839 9.49.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.464-1.11-1.464-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.831.092-.646.35-1.086.636-1.336-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.137 20.167 22 16.418 22 12c0-5.523-4.523-10-10-10z" />
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Form Column -->
+        <div class="glass-card">
+          <form class="contact-form" id="contactForm">
+            <div class="form-group-row">
+              <div class="form-group">
+                <label for="name" class="form-label">Your Name</label>
+                <input type="text" id="name" class="form-input" placeholder="John Doe" required>
+              </div>
+              <div class="form-group">
+                <label for="email" class="form-label">Email Address</label>
+                <input type="email" id="email" class="form-input" placeholder="john@example.com" required>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="subject" class="form-label">Subject</label>
+              <input type="text" id="subject" class="form-input" placeholder="Internship Opportunity" required>
+            </div>
+
+            <div class="form-group">
+              <label for="message" class="form-label">Message</label>
+              <textarea id="message" class="form-textarea" placeholder="Hello Mahadharshini, I would like to discuss..."
+                required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary form-submit-btn">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container footer-content">
+      <p class="footer-text">&copy; 2026 S. Mahadharshini. All Rights Reserved.</p>
+      <p class="footer-text" style="font-size: 0.8rem; margin-top: -5px; color: var(--text-muted);">
+        Designed with ❤️ & build using HTML, CSS, and JS
+      </p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
